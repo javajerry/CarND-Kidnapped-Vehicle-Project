@@ -25,7 +25,7 @@ void ParticleFilter::init(double x, double y, double theta, double std[]) {
 	// Add random Gaussian noise to each particle.
 	// NOTE: Consult particle_filter.h for more information about this method (and others in this file).
 	default_random_engine gen;
-	num_particles = 1;
+	num_particles = 10;
 
 	// define normal distributions for sensor noise
 	normal_distribution<double> nd_x (0, std[0]);
